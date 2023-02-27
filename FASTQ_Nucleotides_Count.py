@@ -21,7 +21,7 @@ def Nucleotide(path):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    path = "Testing/fake_test_file"
+    path = "Testing/fake_test_file.fastq"
     print(Nucleotide(path))
 
 
