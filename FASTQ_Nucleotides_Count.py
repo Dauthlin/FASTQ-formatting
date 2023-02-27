@@ -1,8 +1,4 @@
-
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import argparse
 from Bio import SeqIO
 
 def Sequence(path):
@@ -11,7 +7,7 @@ def Sequence(path):
         for line in file:
             if line.rstrip() == "":
                 total += 1
-    return total
+    return total / 4
 
 def Nucleotide(path):
     total = 0
@@ -21,8 +17,14 @@ def Nucleotide(path):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    path = "Testing/fake_test_file.fastq"
-    print(Nucleotide(path))
-
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-f", "--filename", help="File Name")
+    parser.add_argument("-s", "--sequence", help="Count sequences")
+    parser.add_argument("-n", "--nucleotide", help="Count nucleotides")
+    args = parser.parse_args()
+    if args.nucleotide is not None:
+        print(Nucleotide(args.filename))
+    if args.sequence is not None:
+        print(Sequence(args.filename))
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
