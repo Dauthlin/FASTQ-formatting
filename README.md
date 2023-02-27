@@ -12,4 +12,4 @@ Depending on which version you are using you will have access to up to 3 flags.
 
 in FASTQ_Sequence_Count.py you have -f which selects the filename and -s True which selects whether you would like to perform a sequence count.
 
-in FASTQ_Nucleotides_Count.py and FASTQ_Zipped_Counting.py you have access to both above flags as well as -n which allows you to select if you would like to do a nucleotide count.
+in FASTQ_Nucleotides_Count.py and FASTQ_Zipped_Counting.py you have access to both above flags as well as -n True which allows you to select if you would like to do a nucleotide count.
