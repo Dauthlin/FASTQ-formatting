@@ -6,7 +6,7 @@ FASTQ_Nucleotides_Count.py covers user case 1 and 2
 FASTQ_Zipped_Counting.py covers user case 1, 2 and 3
 
 To run the program in your command line type:
-  python PROGRAM_VERSIPON_HERE.py 
+  python PROGRAM_VERSION_HERE.py 
  
 Depending on which version you are using you will have access to up to 3 flags.
 
