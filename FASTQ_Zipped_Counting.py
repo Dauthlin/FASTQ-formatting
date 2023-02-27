@@ -26,6 +26,7 @@ def Nucleotide(file):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
+    # checks for flags in input
     parser.add_argument("-f", "--filename", help="File Name")
     parser.add_argument("-s", "--sequence", help="Count sequences")
     parser.add_argument("-n", "--nucleotide", help="Count nucleotides")

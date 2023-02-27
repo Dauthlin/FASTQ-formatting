@@ -10,6 +10,7 @@ def Sequence(path):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+    # checks for flags in input
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", "--filename", help="File Name")
     parser.add_argument("-s", "--sequence", help="Count sequences")
