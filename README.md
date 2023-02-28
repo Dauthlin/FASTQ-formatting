@@ -5,7 +5,8 @@ FASTQ_Sequence_Count.py only covers user case 1
 FASTQ_Nucleotides_Count.py covers user case 1 and 2
 FASTQ_Zipped_Counting.py covers user case 1, 2 and 3
 
-To run the program in your command line type:
+
+To run the program clone the repository then in your command line type:
   python PROGRAM_VERSION_HERE.py 
  
 Depending on which version you are using you will have access to up to 3 flags.
