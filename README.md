@@ -14,4 +14,4 @@ in FASTQ_Sequence_Count.py you have -f which selects the filename and -s True wh
 
 in FASTQ_Nucleotides_Count.py and FASTQ_Zipped_Counting.py you have access to both above flags as well as -n True which allows you to select if you would like to do a nucleotide count.
 
-To create new tests please do so in the Testing folder using pytest these tests will be run automatically on new pushes to the repository 
+To create new tests please do so in the Testing folder using pytest. These tests will be run automatically on new pushes to the repository 
