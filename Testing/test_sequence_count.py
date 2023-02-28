@@ -2,9 +2,9 @@ import os
 import subprocess
 
 
-# def test_initialize():
-#     assert True == True
-#
+def test_initialize():
+    assert True == False
+
 
 def run(cmd):
     # print(cmd)
