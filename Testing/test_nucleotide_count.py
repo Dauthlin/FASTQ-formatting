@@ -24,16 +24,16 @@ def test_file_and_nucleotide():
     assert str(result) == "60"
 
 
-# def test_file_and_series_and_nucleotide():
-#     # gets the path of the program to test
-#     program_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "FASTQ_Nucleotides_Count.py")
-#     # gets the path of the data
-#     data_path = os.path.join(os.path.dirname(__file__), "fake_test_file.fastq")
-#     # combines them into a single command
-#     command = str("python " + program_path + " -f " + data_path + " -n true -s true")
-#     # runs the command
-#     result = (run(cmd=command)).decode('ascii').strip()
-#     assert str(result) == '60\r\n0.0'
+def test_file_and_series_and_nucleotide():
+    # gets the path of the program to test
+    program_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "FASTQ_Nucleotides_Count.py")
+    # gets the path of the data
+    data_path = os.path.join(os.path.dirname(__file__), "fake_test_file.fastq")
+    # combines them into a single command
+    command = str("python " + program_path + " -f " + data_path + " -n true -s true")
+    # runs the command
+    result = (run(cmd=command)).decode('ascii').strip()
+    assert str(result) == '60\r\n0.0'
 
 
 if __name__ == '__main__':
