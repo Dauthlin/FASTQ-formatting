@@ -56,7 +56,7 @@ def test_file_and_series_and_nucleotide_zipped():
     command = str("python " + program_path + " -f " + data_path + " -n true -s true")
     # runs the command
     result = (run(cmd=command)).decode('ascii').strip()
-    assert str(result) == '60\r\n0.0'
+    assert str(result) == '60\n0.0'
 
 
 
